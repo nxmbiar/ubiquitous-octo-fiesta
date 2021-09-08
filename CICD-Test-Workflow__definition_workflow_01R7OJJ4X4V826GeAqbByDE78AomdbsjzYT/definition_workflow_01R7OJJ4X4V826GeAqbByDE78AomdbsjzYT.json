@@ -36,6 +36,22 @@
           "skip_execution": false
         },
         "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01R7OP7ANPMXG5adduFM8M7kkIAKH9I7Lee",
+        "name": "Format Date",
+        "title": "Format Date",
+        "type": "core.format_date",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Format Date",
+          "format_string": "02 Jan 06 15:04 -0700",
+          "original_date": "$activity.definition_activity_01R7OK4F42QFP4n8lRyLaVkMecHjt0Le9D3.output.result$",
+          "skip_execution": false,
+          "use_custom_format": false
+        },
+        "object_type": "definition_activity"
       }
     ],
     "categories": [
