@@ -1,0 +1,45 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01R7OJJ4X4V826GeAqbByDE78AomdbsjzYT",
+    "name": "CICD Test Workflows",
+    "title": "CICD Test Workflows",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "description": "Lets just see if this works, eh?",
+      "display_name": "CICD Test Workflows",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01R7OK4F42QFP4n8lRyLaVkMecHjt0Le9D3",
+        "name": "Calculate Date",
+        "title": "Calculate Date",
+        "type": "core.calculate_date",
+        "base_type": "activity",
+        "properties": {
+          "adjustment": 0,
+          "continue_on_failure": false,
+          "display_name": "Calculate Date",
+          "original_date": "$workflow.definition_workflow_01R7OJJ4X4V826GeAqbByDE78AomdbsjzYT.output.start_time$",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  }
+}
