@@ -54,7 +54,7 @@ jobs:
           method: 'GET'
 
       - name: Write auto-doc script
-        run: printf $${{ steps.auto-doc-script.outputs.response }} > .github/auto-doc.py
+        run: printf $${{ steps.sample-template.outputs.response }} > .github/templates/sample_template.md
           
       - name: execute py script # run sj-gobierno.py to get the latest data
         run: python .github/auto-doc.py $GITHUB_WORKSPACE
