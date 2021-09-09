@@ -11,6 +11,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
+      "description": "Let there be a description",
       "display_name": "CICD Test Workflows 2",
       "runtime_user": {
         "target_default": true
@@ -69,6 +70,21 @@
           "continue_on_failure": false,
           "display_name": "Execute Python Script",
           "script": "print('Hello')",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01R8HAGTW68E96uV0FN6DOxEIVggr5Elg1E",
+        "name": "Calculate Date",
+        "title": "Calculate Date",
+        "type": "core.calculate_date",
+        "base_type": "activity",
+        "properties": {
+          "adjustment": 0,
+          "continue_on_failure": false,
+          "display_name": "Calculate Date",
+          "original_date": "$workflow.definition_workflow_01R8ESL2RSFVT2AEsR1SMOVOryqsq4hdkFM.output.start_time$",
           "skip_execution": false
         },
         "object_type": "definition_activity"
