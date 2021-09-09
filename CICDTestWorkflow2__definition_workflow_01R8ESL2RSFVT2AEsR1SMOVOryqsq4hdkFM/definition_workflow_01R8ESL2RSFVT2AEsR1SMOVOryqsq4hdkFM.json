@@ -1,0 +1,69 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01R8ESL2RSFVT2AEsR1SMOVOryqsq4hdkFM",
+    "name": "CICD Test Workflows 2",
+    "title": "CICD Test Workflows 2",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "CICD Test Workflows 2",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01R8ESTHSAYN72pQAXJddMXgbBM1nUd0bqC",
+        "name": "Sleep",
+        "title": "Sleep",
+        "type": "core.sleep",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Sleep",
+          "skip_execution": false,
+          "sleep_interval": 1
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01R8ET1BW7OWF6jim8FuhiRZvYgGHECuIcR",
+        "name": "String - Get Length",
+        "title": "String - Get Length",
+        "type": "workflow.atomic_workflow",
+        "base_type": "subworkflow",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "String - Get Length",
+          "input": {
+            "variable_workflow_01J3SU7SDQUQW2jXUJjQXaM47b4BYg7mxcD": "$workflow.definition_workflow_01R8ESL2RSFVT2AEsR1SMOVOryqsq4hdkFM.output.instance_id$"
+          },
+          "runtime_user": {
+            "target_default": true
+          },
+          "skip_execution": false,
+          "target": {
+            "no_target": true
+          },
+          "workflow_id": "definition_workflow_01J3STRKBDJ7H4DZmPyS7xOkHlrhXKxkH34"
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "atomic_workflows": [
+    "definition_workflow_01J3STRKBDJ7H4DZmPyS7xOkHlrhXKxkH34"
+  ]
+}
