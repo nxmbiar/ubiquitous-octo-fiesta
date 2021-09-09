@@ -57,6 +57,21 @@
           "workflow_id": "definition_workflow_01J3STRKBDJ7H4DZmPyS7xOkHlrhXKxkH34"
         },
         "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01R8F4SDITHS47MfKam9OLCTygK9Gxh1SLm",
+        "name": "Execute Python Script",
+        "title": "Execute Python Script",
+        "type": "python3.script",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "display_name": "Execute Python Script",
+          "script": "print('Hello')",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
       }
     ],
     "categories": [
