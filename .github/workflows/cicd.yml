@@ -28,10 +28,7 @@ jobs:
         uses: jitterbit/get-changed-files@v1
         with:
           format: 'json'
-    
-      - name: Write Changed Files
-        run: printf '%s,' '${{ steps.files.outputs.added_modified }}' > .github/wf.json
-      
+
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
