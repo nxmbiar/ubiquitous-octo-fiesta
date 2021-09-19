@@ -90,6 +90,20 @@
         "object_type": "definition_activity"
       },
       {
+        "unique_name": "definition_activity_01RH09TW58VZU3N5xOZvd9swcYAjplfoVmH",
+        "name": "Sleep",
+        "title": "Sleep",
+        "type": "core.sleep",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Sleep",
+          "skip_execution": false,
+          "sleep_interval": 10
+        },
+        "object_type": "definition_activity"
+      },
+      {
         "unique_name": "definition_activity_01RE68KHSHMA25e9gu1hTKJdKM0mklMU9Lg",
         "name": "Sleep",
         "title": "Sleep",
