@@ -11,7 +11,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "description": "Let there be a description",
+      "description": "Let there be a description\nLast Updated 19 Sept",
       "display_name": "CICD Test Workflows 2",
       "runtime_user": {
         "target_default": true
@@ -91,6 +91,20 @@
       },
       {
         "unique_name": "definition_activity_01RE68KHSHMA25e9gu1hTKJdKM0mklMU9Lg",
+        "name": "Sleep",
+        "title": "Sleep",
+        "type": "core.sleep",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Sleep",
+          "skip_execution": false,
+          "sleep_interval": 10
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01RH070DWNL162Jd1aTnUrSbY1QYvIdvrbG",
         "name": "Sleep",
         "title": "Sleep",
         "type": "core.sleep",
