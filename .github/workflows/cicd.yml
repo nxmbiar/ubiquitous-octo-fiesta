@@ -37,9 +37,9 @@ jobs:
           # Required mail server port:
           server_port: 465
           # Optional (recommended): mail server username:
-          username: ${{secrets.MAIL_USERNAME}}
+          # username: ${{secrets.MAIL_USERNAME}}
           # Optional (recommended) mail server password:
-          password: ${{secrets.MAIL_PASSWORD}}
+          # password: ${{secrets.MAIL_PASSWORD}}
           # Required mail subject:
           subject: New Push To Master
           # Required recipients' addresses:
@@ -49,8 +49,4 @@ jobs:
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional plain body:
-          body: ${{ steps.files.outputs.added_modified }}
-          # Optional unsigned/invalid certificates allowance:
-          ignore_cert: true
-          # Optional converting Markdown to HTML (set content_type to text/html too):
-          convert_markdown: true
+          body: Repo->${{github.repository}} ${{ steps.files.outputs.added_modified }}
