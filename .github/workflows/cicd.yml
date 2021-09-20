@@ -43,9 +43,9 @@ jobs:
           # Required mail subject:
           subject: New Push To Master
           # Required recipients' addresses:
-          to: anant.nambiar@gmail.com
+          to: operateorchestration@gmail.com
           # Required sender full name (address can be skipped):
-          from: <sxo.cicd@gmail.com>
+          from: Operate GitHub
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional plain body:
