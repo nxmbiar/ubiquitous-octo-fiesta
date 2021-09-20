@@ -130,34 +130,6 @@
           "sleep_interval": 10
         },
         "object_type": "definition_activity"
-      },
-      {
-        "unique_name": "definition_activity_01RH0JN2SPTVM1hkqu35z0uqoXrYt0jzOV8",
-        "name": "Sleep",
-        "title": "Sleep",
-        "type": "core.sleep",
-        "base_type": "activity",
-        "properties": {
-          "continue_on_failure": false,
-          "display_name": "Sleep",
-          "skip_execution": false,
-          "sleep_interval": 0
-        },
-        "object_type": "definition_activity"
-      },
-      {
-        "unique_name": "definition_activity_01RH10AZB0P5X4vtDuKjEojvYSe3qMI6fWv",
-        "name": "Sleep",
-        "title": "Sleep",
-        "type": "core.sleep",
-        "base_type": "activity",
-        "properties": {
-          "continue_on_failure": false,
-          "display_name": "Sleep",
-          "skip_execution": false,
-          "sleep_interval": 0
-        },
-        "object_type": "definition_activity"
       }
     ],
     "categories": [
