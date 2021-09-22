@@ -94,7 +94,7 @@ jobs:
         run: python .github/analyzer_render_template.py $GITHUB_WORKSPACE $GITHUB_SHA
 
       - name: Echo Vars
-        run: printf 'No Issue - %s, Close Issue - %s' '${{ steps.run-python-script.outputs.no_issue }}' 'steps.run-python-script.outputs.close_issues'
+        run: printf 'No Issue - %s, Close Issue - %s' '${{ steps.run-python-script.outputs.no_issue }}' '${{ steps.run-python-script.outputs.close_issues }}'
       
       - name: Create Issue
         uses: JasonEtco/create-an-issue@v2
