@@ -11,7 +11,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "description": "Lets just see if this works, eh?",
+      "description": "Lets just see if this works, eh? Cmon no issues are there",
       "display_name": "CICD Test Workflows",
       "runtime_user": {
         "target_default": true
